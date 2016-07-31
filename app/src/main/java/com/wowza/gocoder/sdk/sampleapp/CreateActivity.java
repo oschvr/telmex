@@ -55,7 +55,7 @@ public class CreateActivity extends AppCompatActivity  {
         //Cambia por mapa
         VideoView videoView = (VideoView) findViewById(R.id.videoView);
 
-        videoView.setVideoPath("http://vectorthree.com/fuck/fuck.webm");
+        videoView.setVideoPath("http://www.vectorthree.com//telmex/mh2low.mp4");
 
         videoView.start();
 

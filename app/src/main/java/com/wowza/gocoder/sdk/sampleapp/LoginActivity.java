@@ -76,6 +76,7 @@ public class LoginActivity extends Activity {
                         .create()
                         .show();
             }
+
         });
 
         //REGISTER

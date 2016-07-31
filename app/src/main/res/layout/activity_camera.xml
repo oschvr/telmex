@@ -85,6 +85,11 @@
             android:layout_centerHorizontal="true"
             android:layout_margin="10dp" />
 
+        <ViewStub
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/viewStub" />
+
         <com.wowza.gocoder.sdk.sampleapp.ui.MultiStateButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -136,6 +141,15 @@
                 android:visibility="visible"/>
         </LinearLayout>
 
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LCC"
+            android:id="@+id/bDoc"
+            android:layout_alignStart="@+id/ic_settings"
+            android:layout_alignEnd="@+id/ic_settings" />
+
     </RelativeLayout>
 
     <com.wowza.gocoder.sdk.sampleapp.ui.StatusView
@@ -144,4 +158,5 @@
         android:layout_height="match_parent"
         android:visibility="invisible">
     </com.wowza.gocoder.sdk.sampleapp.ui.StatusView>
+
 </RelativeLayout>

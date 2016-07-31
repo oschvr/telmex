@@ -16,11 +16,16 @@
 package com.wowza.gocoder.sdk.sampleapp;
 
 import android.Manifest;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.v4.view.GestureDetectorCompat;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
+import android.webkit.WebView;
+import android.widget.Button;
 
 import com.wowza.gocoder.sdk.api.devices.WZCamera;
 import com.wowza.gocoder.sdk.sampleapp.config.ConfigPrefs;
@@ -35,6 +40,7 @@ public class CameraActivity extends CameraActivityBase {
     protected MultiStateButton      mBtnSwitchCamera  = null;
     protected MultiStateButton      mBtnTorch         = null;
     protected TimerView             mTimerView        = null;
+
 
     // Gestures are used to toggle the focus modes
     protected GestureDetectorCompat mAutoFocusDetector = null;
@@ -53,6 +59,29 @@ public class CameraActivity extends CameraActivityBase {
         mBtnTorch           = (MultiStateButton) findViewById(R.id.ic_torch);
         mBtnSwitchCamera    = (MultiStateButton) findViewById(R.id.ic_switch_camera);
         mTimerView          = (TimerView) findViewById(R.id.txtTimer);
+
+        Button bDoc = (Button)findViewById(R.id.bDoc);
+
+        bDoc.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://drive.google.com/open?id=0B2keCx8flCgnR21zUUlsemRDSG8"));
+                startActivity(browserIntent);
+            }
+        });
+        /*bDoc.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                WebView webview = new WebView();
+                String myPdfUrl = "@assets/leyculturacivica.pdf";
+                String url = "http://docs.google.com/gview?embedded=true&url=" + myPdfUrl;
+                Log.i(TAG, "Opening PDF: " + url);
+                webview.getSettings().setJavaScriptEnabled(true);
+                webview.loadUrl(url);
+                //Intent registerIntent = new Intent(LoginActivity.this, RegisterActivity.class);
+                //LoginActivity.this.startActivity(registerIntent);
+            }
+        });*/
     }
 
     /**

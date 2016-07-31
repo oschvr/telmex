@@ -10,10 +10,10 @@
         android:id="@+id/etNombreBrigada"
         android:hint="Nombre Brigada"
         style="@style/Base.TextAppearance.AppCompat.Title"
+        android:editable="true"
         android:layout_above="@+id/etDescripcion"
         android:layout_alignParentStart="true"
-        android:layout_alignEnd="@+id/etDescripcion"
-        android:editable="true" />
+        android:layout_alignEnd="@+id/etDescripcion" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -21,9 +21,9 @@
         android:id="@+id/etDescripcion"
         android:editable="true"
         android:hint="Descripción de la brigada. Por qué motivo se creó? Cuál es el problema? Qué plan de Acción? "
+        android:maxLines="5"
         android:layout_above="@+id/etCategoria"
-        android:layout_alignParentEnd="true"
-        android:maxLines="5" />
+        android:layout_alignParentStart="true" />
 
     <Button
         android:layout_width="wrap_content"
@@ -34,24 +34,45 @@
         android:layout_alignParentStart="true"
         android:nestedScrollingEnabled="true"
         android:hint="Crear Brigada"
-        style="@style/Base.Widget.AppCompat.Button.Colored" />
+        style="@style/Widget.AppCompat.Button.Colored" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/etCategoria"
-        android:layout_above="@+id/bCrear"
-        android:layout_alignEnd="@+id/bCrear"
-        android:layout_alignParentStart="true"
         android:hint="Categoria: Vialidad, Limpieza, etc."
-        android:editable="true" />
+        android:editable="true"
+        android:layout_marginBottom="103dp"
+        android:layout_above="@+id/bCrear"
+        android:layout_alignEnd="@+id/etDescripcion"
+        android:layout_alignParentStart="true" />
 
     <VideoView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/videoView"
-        android:layout_centerHorizontal="true"
-        android:layout_above="@+id/etNombreBrigada" />
+        android:layout_above="@+id/etNombreBrigada"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Comparti a Facebook"
+        android:id="@+id/bFb"
+        android:layout_above="@+id/bCrear"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Compartir a Twitter"
+        android:id="@+id/bTwitter"
+        android:layout_above="@+id/bFb"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored" />
 
 
 </RelativeLayout>
