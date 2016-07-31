@@ -13,56 +13,62 @@
         android:id="@+id/etUsername"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
         android:ems="10"
         android:hint="Usuario"
-        style="@style/Base.TextAppearance.AppCompat.Display2" />
+        style="@style/Base.TextAppearance.AppCompat.Display1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="99dp" />
 
     <EditText
         android:id="@+id/etPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/etUsername"
         android:ems="10"
         android:hint="Contraseña"
         android:inputType="textPassword"
-        style="@style/Base.TextAppearance.AppCompat.Display2" />
+        style="@style/Base.TextAppearance.AppCompat.Display1"
+        android:layout_below="@+id/etUsername"
+        android:layout_alignParentStart="true" />
 
     <Button
         android:id="@+id/bSignIn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentStart="true"
         android:text="Iniciar Sesión"
-        android:layout_alignParentLeft="true"
+        style="@style/Base.Widget.AppCompat.Button.Colored"
         android:layout_below="@+id/etPassword"
-        style="@style/Base.Widget.AppCompat.Button.Colored" />
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Registrarse"
         android:id="@+id/tvRegisterLink"
+        style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
         android:layout_below="@+id/bSignIn"
-        android:layout_alignEnd="@+id/bSignIn"
         android:layout_alignParentStart="true"
-        style="@style/Base.Widget.AppCompat.Button.Borderless.Colored" />
+        android:layout_alignParentEnd="true" />
 
-    <Gallery
+    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/gallery"
-        android:layout_alignParentTop="true"
+        android:id="@+id/logo"
+        android:src="@drawable/brigada1024transparent"
+        android:layout_marginBottom="83dp"
+        android:layout_alignBottom="@+id/etUsername"
+        android:layout_alignParentStart="true" />
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvRegisterLink"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="172dp" />
+        android:layout_alignParentStart="true"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp" />
+
 
 </RelativeLayout>

@@ -1,5 +1,8 @@
 package com.wowza.gocoder.sdk.sampleapp;
 
+import com.facebook.FacebookSdk;
+import com.facebook.appevents.AppEventsLogger;
+
 import android.app.Activity;
 import android.app.ListActivity;
 import android.content.Intent;
@@ -8,8 +11,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
-
-import com.wowza.gocoder.sdk.sampleapp.users.LoginActivity;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -21,7 +22,10 @@ public class MainActivity extends Activity {
     @Override   
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        FacebookSdk.sdkInitialize(this.getApplicationContext());
         setContentView(R.layout.activity_login);
+
+
         if (getActionBar() != null) {
             getActionBar().setTitle(getResources().getString(R.string.app_name_long));
         }

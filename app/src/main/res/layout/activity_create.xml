@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_horizontal_margin">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etNombreBrigada"
+        android:hint="Nombre Brigada"
+        style="@style/Base.TextAppearance.AppCompat.Title"
+        android:layout_above="@+id/etDescripcion"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/etDescripcion"
+        android:editable="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etDescripcion"
+        android:editable="true"
+        android:hint="Descripción de la brigada. Por qué motivo se creó? Cuál es el problema? Qué plan de Acción? "
+        android:layout_above="@+id/etCategoria"
+        android:layout_alignParentEnd="true"
+        android:maxLines="5" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bCrear"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:nestedScrollingEnabled="true"
+        android:hint="Crear Brigada"
+        style="@style/Base.Widget.AppCompat.Button.Colored" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etCategoria"
+        android:layout_above="@+id/bCrear"
+        android:layout_alignEnd="@+id/bCrear"
+        android:layout_alignParentStart="true"
+        android:hint="Categoria: Vialidad, Limpieza, etc."
+        android:editable="true" />
+
+    <VideoView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/videoView"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/etNombreBrigada" />
+
+</RelativeLayout>

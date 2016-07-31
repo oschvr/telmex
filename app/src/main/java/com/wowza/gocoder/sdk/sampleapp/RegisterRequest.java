@@ -1,8 +1,4 @@
-package com.wowza.gocoder.sdk.sampleapp.users;
-
-/**
- * Created by Rob on 7/30/2016.
- */
+package com.wowza.gocoder.sdk.sampleapp;
 
 import android.os.Debug;
 
@@ -36,4 +32,3 @@ public class RegisterRequest extends StringRequest {
         return params;
     }
 }
-

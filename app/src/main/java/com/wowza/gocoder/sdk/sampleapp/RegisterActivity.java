@@ -1,38 +1,19 @@
-package com.wowza.gocoder.sdk.sampleapp.users;
+package com.wowza.gocoder.sdk.sampleapp;
 
-import android.app.AlertDialog;
-import android.content.Intent;
-import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
+        import android.app.AlertDialog;
+        import android.content.Intent;
+        import android.os.Bundle;
+        import android.support.v7.app.AppCompatActivity;
+        import android.view.View;
+        import android.widget.Button;
+        import android.widget.EditText;
 
-import com.android.volley.RequestQueue;
-import com.android.volley.Response;
-import com.android.volley.toolbox.Volley;
+        import com.android.volley.RequestQueue;
+        import com.android.volley.Response;
+        import com.android.volley.toolbox.Volley;
 
-import org.json.JSONException;
-import org.json.JSONObject;
-
-
-import android.app.AlertDialog;
-import android.content.Intent;
-import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
-
-import com.android.volley.RequestQueue;
-import com.android.volley.Response;
-import com.android.volley.toolbox.Volley;
-import com.wowza.gocoder.sdk.sampleapp.R;
-
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import java.util.Date;
+        import org.json.JSONException;
+        import org.json.JSONObject;
 
 public class RegisterActivity extends AppCompatActivity {
 

@@ -1,6 +1,9 @@
 <resources>
-    <string name="app_name_short">GoCoder SDK</string>
-    <string name="app_name_long">Wowza GoCoder SDK Examples</string>
+    <string name="app_name">BRIGADA</string>
+    <string name="app_name_short">BRIGADA</string>
+    <string name="app_name_long">BRIGADA: Juntos por la recuperación urbana</string>
+
+    <string name="facebook_app_id">815465375221473</string>
 
     <string name="camera_example_title">GoCoder SDK Capture Example</string>
     <string name="mp4_broadcast_title">GoCoder SDK MP4 Broadcast Example</string>

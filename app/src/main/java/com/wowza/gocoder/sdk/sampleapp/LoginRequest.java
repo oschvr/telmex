@@ -1,4 +1,4 @@
-package com.wowza.gocoder.sdk.sampleapp.users;
+package com.wowza.gocoder.sdk.sampleapp;
 
 /**
  * Created by Rob on 7/30/2016.
