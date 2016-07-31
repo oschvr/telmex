@@ -4,6 +4,58 @@
     android:layout_height="match_parent"
     android:padding="@dimen/activity_horizontal_margin">
 
+    <fragment
+        android:id="@+id/map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:name="com.google.android.gms.maps.SupportMapFragment"/>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <TextView android:text="@string/fill_hue" />
+
+        <SeekBar android:id="@+id/hueSeekBar" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <TextView android:text="@string/fill_alpha" />
+
+        <SeekBar android:id="@+id/alphaSeekBar" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <TextView android:text="@string/stroke_width" />
+
+        <SeekBar android:id="@+id/widthSeekBar" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <CheckBox
+            android:id="@+id/toggleClickability"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:onClick="toggleClickability"
+            android:text="@string/clickable"/>
+    </TableRow>
+
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

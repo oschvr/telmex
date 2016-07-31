@@ -2,6 +2,11 @@
     <string name="app_name">BRIGADA</string>
     <string name="app_name_short">BRIGADA</string>
     <string name="app_name_long">BRIGADA: Juntos por la recuperación urbana</string>
+    <string name="map_circle_description">Encuentra reportes cercanos</string>
+    <string name="clickable">Seleciona</string>
+    <string name="fill_alpha">Fill Alpha</string>
+    <string name="fill_hue">Fill Hue</string>
+    <string name="stroke_width">Stroke Width</string>
 
     <string name="facebook_app_id">815465375221473</string>
 
